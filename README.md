@@ -15,6 +15,9 @@ zsh + bash config. Vi mode, 100k history, case-sensitive completion, starship pr
 | lazygit | `lg` |
 | neovim | `$EDITOR`, `Esc v` |
 | bat, ripgrep, fd, tree-sitter-cli | neovim |
+| Nerd Font | starship + nvim icons |
+
+Terminal font: **JetBrainsMono Nerd Font Mono** — the Mono variant keeps icons one cell wide.
 
 `.zprofile` assumes Homebrew at `/opt/homebrew` (Apple Silicon).
 
