@@ -1,0 +1,3 @@
+[directory]
+truncation_length = 3        # truncation levels
+truncation_symbol = "…/"     # shows an ellipsis marker when truncated, instead of silently dropping segments
