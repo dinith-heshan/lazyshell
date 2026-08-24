@@ -15,7 +15,7 @@ zsh + bash config. Vi mode, 100k history, case-sensitive completion, starship pr
 | [lazygit](https://github.com/jesseduffield/lazygit) | `lg` |
 | [neovim](https://github.com/neovim/neovim) | `$EDITOR`, `Esc v` |
 | [bat](https://github.com/sharkdp/bat), [ripgrep](https://github.com/BurntSushi/ripgrep), [fd](https://github.com/sharkdp/fd), [tree-sitter-cli](https://github.com/tree-sitter/tree-sitter) | neovim |
-| [Nerd Font](https://github.com/ryanoasis/nerd-fonts) | starship + nvim icons |
+| [Nerd Font](https://github.com/ryanoasis/nerd-fonts) | starship + neovim icons |
 
 Terminal font: **JetBrainsMono Nerd Font Mono** — the Mono variant keeps icons one cell wide.
 
