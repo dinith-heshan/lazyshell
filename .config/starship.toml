@@ -1,7 +1,7 @@
 [character]
 success_symbol = '[❯](bold green)'
 error_symbol = '[❯](bold red)'
-vimcmd_symbol = '[❮](bold yellow)'
+vimcmd_symbol = '[❮](bold yellow)'  # only works in zsh — bash uses the cursor shape from `.inputrc`.
 
 [directory]
 truncation_length = 3
