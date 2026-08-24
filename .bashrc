@@ -2,23 +2,28 @@
 #  History
 # ─────────────────────────────────────────────
 HISTFILE=~/.bash_history
-HISTSIZE=100000
-HISTFILESIZE=100000
-HISTCONTROL=ignoreboth:erasedups
-HISTTIMEFORMAT='%F %T '
-shopt -s histappend cmdhist checkwinsize
-PROMPT_COMMAND='history -a'
+HISTSIZE=100000                # commands kept in memory this session
+HISTFILESIZE=100000            # commands written to disk
+HISTCONTROL=ignoreboth:erasedups   # ignore dups + leading-space commands
+HISTTIMEFORMAT='%F %T '        # timestamps
+shopt -s histappend            # append, don't overwrite
+shopt -s cmdhist               # multi-line commands as one entry
+shopt -s checkwinsize
+PROMPT_COMMAND='history -a'    # write after each command (shared across tabs)
 
 # ─────────────────────────────────────────────
 #  Colours
 # ─────────────────────────────────────────────
-export CLICOLOR=1
 export LS_COLORS='di=1;34:ln=1;35:so=1;32:pi=1;33:ex=1;31'
 
 # ─────────────────────────────────────────────
-#  Vi mode
+#  Completion
 # ─────────────────────────────────────────────
-set -o vi
+[ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
+
+# ─────────────────────────────────────────────
+#  Vi mode      (cursor shapes live in .inputrc)
+# ─────────────────────────────────────────────
 export EDITOR=nvim
 
 # ─────────────────────────────────────────────
@@ -29,6 +34,7 @@ alias ll='eza -lah --git --group-directories-first'
 alias lg='lazygit'
 alias grep='grep --color=auto'
 
+# lt [depth] [path]  — tree view, depth defaults to 2
 lt() { eza --tree --level="${1:-2}" "${@:2}"; }
 
 # ─────────────────────────────────────────────
