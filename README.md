@@ -10,16 +10,16 @@ zsh + bash config. Vi mode, 100k history, case-sensitive completion, starship pr
 
 | Tool | Used for |
 |---|---|
-| starship | prompt |
-| eza | `ls` `ll` `lt` |
-| lazygit | `lg` |
-| neovim | `$EDITOR`, `Esc v` |
-| bat, ripgrep, fd, tree-sitter-cli | neovim |
-| Nerd Font | starship + nvim icons |
+| [starship](https://github.com/starship/starship) | prompt |
+| [eza](https://github.com/eza-community/eza) | `ls` `ll` `lt` |
+| [lazygit](https://github.com/jesseduffield/lazygit) | `lg` |
+| [neovim](https://github.com/neovim/neovim) | `$EDITOR`, `Esc v` |
+| [bat](https://github.com/sharkdp/bat), [ripgrep](https://github.com/BurntSushi/ripgrep), [fd](https://github.com/sharkdp/fd), [tree-sitter-cli](https://github.com/tree-sitter/tree-sitter) | neovim |
+| [Nerd Font](https://github.com/ryanoasis/nerd-fonts) | starship + nvim icons |
 
 Terminal font: **JetBrainsMono Nerd Font Mono** — the Mono variant keeps icons one cell wide.
 
-`.zprofile` assumes Homebrew at `/opt/homebrew` (Apple Silicon).
+`.zprofile` assumes [Homebrew](https://github.com/Homebrew/brew) at `/opt/homebrew` (Apple Silicon).
 
 ## Keys
 
