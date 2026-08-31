@@ -30,7 +30,7 @@ export EDITOR=nvim
 #  Aliases & functions
 # ─────────────────────────────────────────────
 alias ls='eza --group-directories-first'
-alias ll='eza -lah --git --group-directories-first -g -H -i'
+alias ll='eza -agHhil --git --group-directories-first'
 alias lg='lazygit'
 alias grep='grep --color=auto'
 
