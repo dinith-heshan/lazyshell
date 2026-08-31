@@ -29,7 +29,7 @@ Terminal font: **JetBrainsMono Nerd Font Mono** — the Mono variant keeps icons
 | `Esc` | normal mode — cursor turns block |
 | `k` `j` | history, filtered by what's typed |
 | `Esc v` | edit command line in nvim |
-| `lt [depth]` | tree view |
+| `lt [depth=2] [path=.]` | tree view |
 
 ## Neovim
 
