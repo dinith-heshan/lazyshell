@@ -65,12 +65,19 @@ bindkey -M vicmd 'v' edit-command-line
 #  Aliases & functions
 # ─────────────────────────────────────────────
 alias ls='eza --group-directories-first'
-alias ll='eza -lah --git --group-directories-first'
+alias ll='eza -lah --git --group-directories-first -g -H -i'
 alias lg='lazygit'
 alias grep='grep --color=auto'
 
-# lt [depth] [path]  — tree view, depth defaults to 2
-lt() { eza --tree --level="${1:-2}" "${@:2}" }
+# lt [depth] [path]  — tree view, depth defaults to 2, path default to pwd
+lt() {
+  local level=2
+  if [[ -n $1 && $1 =~ '^[0-9]+$' ]]; then
+    level=$1
+    shift
+  fi
+  eza --tree --level="$level" "$@"
+}
 
 # ─────────────────────────────────────────────
 #  Prompt  (last — sets PROMPT)
