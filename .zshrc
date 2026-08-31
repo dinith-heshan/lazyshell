@@ -65,7 +65,7 @@ bindkey -M vicmd 'v' edit-command-line
 #  Aliases & functions
 # ─────────────────────────────────────────────
 alias ls='eza --group-directories-first'
-alias ll='eza -agHhil --git --group-directories-first'
+alias ll='eza -agHhilM --git --group-directories-first'
 alias lg='lazygit'
 alias grep='grep --color=auto'
 
