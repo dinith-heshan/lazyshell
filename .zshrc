@@ -44,7 +44,6 @@ function zle-keymap-select {
 zle -N zle-keymap-select
 function zle-line-init { printf '\e[6 q' }
 zle -N zle-line-init
-preexec() { printf '\e[6 q' }  # reset to bar before running a command
 
 # ─────────────────────────────────────────────
 #  Key bindings
