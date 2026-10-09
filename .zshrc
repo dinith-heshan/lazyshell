@@ -58,10 +58,18 @@ bindkey -M vicmd 'j' down-line-or-beginning-search
 # ─────────────────────────────────────────────
 #  Aliases & functions
 # ─────────────────────────────────────────────
-alias ls='eza --group-directories-first'
 alias ll='eza -agHhilM --git --group-directories-first'
-alias lg='lazygit'
+alias ls='eza --group-directories-first'
+
 alias grep='grep --color=auto'
+
+nvim() {
+  if [ $# -eq 0 ] && [ -t 0 ]; then
+    command nvim .
+  else
+    command nvim "$@"
+  fi
+}
 
 # lt [depth] [path]  — tree view, depth defaults to 2, path default to pwd
 lt() {
