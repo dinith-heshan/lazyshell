@@ -55,11 +55,6 @@ zle -N down-line-or-beginning-search
 bindkey -M vicmd 'k' up-line-or-beginning-search
 bindkey -M vicmd 'j' down-line-or-beginning-search
 
-# Esc then v opens the current line in $EDITOR
-autoload -Uz edit-command-line
-zle -N edit-command-line
-bindkey -M vicmd 'v' edit-command-line
-
 # ─────────────────────────────────────────────
 #  Aliases & functions
 # ─────────────────────────────────────────────
