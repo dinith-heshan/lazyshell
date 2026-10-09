@@ -1,9 +1,8 @@
 [character]
 success_symbol = '[❯](bold green)'
 error_symbol = '[❯](bold red)'
-# vimcmd_symbol only works in zsh; bash shows mode via cursor shape (.inputrc)
-vimcmd_symbol = '[❮](bold yellow)'
+vimcmd_symbol = '[❯](bold green)'
 
 [directory]
-truncation_length = 3
-truncation_symbol = "…/"
+truncation_length = 0
+truncate_to_repo = true
